@@ -1,0 +1,23 @@
+{
+    "taipyStudio.gUI.elementsFilePaths": [],
+    "dbcode.connections": [
+        {
+            "connectionId": "2qSNhLdb5y1c3fPLhXm2o",
+            "name": "MSSQL SERVER",
+            "driver": "mssql",
+            "connectionType": "socket",
+            "socket": "localhost",
+            "authMethod": "sql",
+            "username": "sa",
+            "password": "",
+            "savePassword": "secretStorage",
+            "readOnly": false,
+            "postConnectionSqlType": "inline",
+            "connectionTimeout": 30,
+            "pinnedConnectionTimeout": "0",
+            "introspection": {
+                "progressive": false
+            }
+        }
+    ]
+}
