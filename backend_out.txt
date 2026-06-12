@@ -1,0 +1,753 @@
+E:\My Learning\My Projects\Portfolio Projects\Project Kappruka\backend\main.py:93: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+  @validator('message')
+E:\My Learning\My Projects\Portfolio Projects\Project Kappruka\backend\main.py:101: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+  @validator('currency')
+INFO:     Started server process [35648]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:__main__:Language: sinhala (selected='sinhala'), Currency: LKR
+INFO:__main__:User message: I need a great birthday gift. What do you recommend?
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): '\u0d86\u0dba\u0dd4\u0db6\u0ddd\u0dc0\u0db1\u0dca! \u0d8b\u0db4\u0db1\u0dca\u0daf\u0dd2\u0db1\u0dba\u0d9a\u0da7 \u0dad\u0dd1\u0d9c\u0dca\u0d9c\u0d9a\u0dca \u0dc3\u0ddc\u0dba\u0db1\u0dc0\u0dcf \u0d9a\u0dd2\u0dba\u0db1\u0dca\u0db1\u0dda \u0dc4\u0dbb\u0dd2\u0db8 \u0dc3\u0dad\u0dd4\u0da7\u0dd4\u0daf\u0dcf\u0dba\u0d9a \u0daf\u0dd9\u0dba\u0d9a\u0dca! \U0001f382 \u0db8\u0db8 \u0d94\u0db6\u0da7 \u0d8b\u0daf\u0dc0\u0dca \u0d9a\u0dbb\u0db1\u0dca\u0db1\u0db8\u0dca.
+
+\u0d94\u0db6\u0da7 \u0d9a\u0dcf\u0da7\u0daf \u0dad\u0dd1\u0d9c\u0dca\u0d9c\u0d9a\u0dca \u0dc4\u0ddc\u0dba\u0db1\u0dca\u0db1\u0dda, \u0dc3\u0dc4 \u0d94\u0dc0\u0dd4\u0db1\u0dca \u0db8\u0ddc\u0db1\u0dc0\u0d9c\u0dda \u0daf\u0dda\u0dc0\u0dbd\u0dca \u0dc0\u0dbd\u0da7 \u0d9a\u0dd0\u0db8\u0dad\u0dd2\u0daf \u0d9a'
+
+Korpi starting on http://0.0.0.0:8000
+API Docs: http://localhost:8000/docs
+Using Gemini 2.5 Flash
+
+INFO:     127.0.0.1:59750 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: tamil (selected='tamil'), Currency: LKR
+INFO:__main__:User message: I need a great birthday gift. What do you recommend?
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): '\u0baa\u0bbf\u0bb1\u0ba8\u0bcd\u0ba4\u0ba8\u0bbe\u0bb3\u0bcd \u0baa\u0bb0\u0bbf\u0b9a\u0bbe? \u0bae\u0bbf\u0b95\u0bb5\u0bc1\u0bae\u0bcd \u0b85\u0bb0\u0bc1\u0bae\u0bc8\u0baf\u0bbe\u0ba9 \u0bb5\u0bbf\u0bb7\u0baf\u0bae\u0bcd! \U0001f389 \u0b8e\u0ba9\u0bcd\u0ba9\u0bbe\u0bb2\u0bcd \u0b89\u0b99\u0bcd\u0b95\u0bb3\u0bc1\u0b95\u0bcd\u0b95\u0bc1 \u0b89\u0ba4\u0bb5 \u0bae\u0bc1\u0b9f\u0bbf\u0baf\u0bc1\u0bae\u0bcd \u0b8e\u0ba9\u0bcd\u0baa\u0ba4\u0bbf\u0bb2\u0bcd \u0bae\u0b95\u0bbf\u0bb4\u0bcd\u0b9a\u0bcd\u0b9a\u0bbf \u0b85\u0b9f\u0bc8\u0b95\u0bbf\u0bb1\u0bc7\u0ba9\u0bcd. \u0baa\u0bbf\u0bb1\u0ba8\u0bcd\u0ba4\u0ba8\u0bbe\u0bb3\u0bc1\u0b95\u0bcd\u0b95\u0bc1 \u0b8f\u0bb1\u0bcd\u0bb1 \u0baa\u0bb2 \u0b85\u0bb1\u0bcd\u0baa\u0bc1\u0ba4\u0bae\u0bbe\u0ba9 \u0baa\u0bb0\u0bbf\u0b9a\u0bc1\u0b95\u0bb3\u0bcd \u0b8e'
+INFO:     127.0.0.1:59427 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62017 - "OPTIONS /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: sinhala (selected='sinhala'), Currency: LKR
+INFO:__main__:User message: Show me flowers
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): '\u0d94\u0db6\u0da7 \u0db8\u0dbd\u0dca \u0d85\u0dc0\u0dc1\u0dca\u200d\u0dba \u0db6\u0dc0 \u0db8\u0da7 \u0dad\u0dda\u0dbb\u0dd9\u0db1\u0dc0\u0dcf. \U0001f338 \u0db8\u0ddc\u0db1\u0dc0\u0d9c\u0dda \u0db8\u0dbd\u0dca \u0dc0\u0dbb\u0dca\u0d9c\u0dba\u0d9a\u0dca\u0daf \u0d94\u0db6 \u0db6\u0dbd\u0dcf\u0db4\u0ddc\u0dbb\u0ddc\u0dad\u0dca\u0dad\u0dd4 \u0dc0\u0dd9\u0db1\u0dca\u0db1\u0dda? \u0db1\u0dd0\u0dad\u0dca\u0db1\u0db8\u0dca, \u0dc0\u0dd2\u0dc1\u0dda\u0dc2 \u0d85\u0dc0\u0dc3\u0dca\u0dae\u0dcf\u0dc0\u0d9a\u0dca \u0dc3\u0db3\u0dc4\u0dcf\u0daf?'
+INFO:     127.0.0.1:62017 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: sinhala (selected='sinhala'), Currency: LKR
+INFO:__main__:User message: Show me cakes
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): '\u0d94\u0db6\u0da7 \u0d85\u0dc0\u0dc1\u0dca\u200d\u0dba \u0d9a\u0dd4\u0db8\u0db1 \u0d86\u0d9a\u0dcf\u0dbb\u0dba\u0dda \u0d9a\u0dda\u0d9a\u0dca \u0daf, \u0d9a\u0dbb\u0dd4\u0dab\u0dcf\u0d9a\u0dbb \u0db8\u0da7 \u0d9a\u0dd2\u0dba\u0db1\u0dca\u0db1. \u0db8\u0db8 \u0d94\u0db6\u0da7 \u0d9c\u0dd0\u0dbd\u0db4\u0dd9\u0db1 \u0d9a\u0dda\u0d9a\u0dca \u0dc0\u0dbb\u0dca\u0d9c \u0dc3\u0ddc\u0dba\u0dcf \u0daf\u0dd9\u0db1\u0dca\u0db1\u0db8\u0dca. \U0001f382'
+INFO:     127.0.0.1:60869 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: singlish (selected='sinhala'), Currency: LKR
+INFO:__main__:User message: mama birthday cake ekak ganna ona \U0001f382
+INFO:__main__:Gemini call round 1, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: search_products args={'currency': 'LKR', 'query': 'birthday cakes', 'category': 'Cakes'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP session initialized: 3ff0f835a3634a34a729b4613038f198
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_search_products response: No products found for 'birthday cakes' in category 'Cakes'.
+INFO:__main__:Tool search_products result length: 59
+INFO:__main__:Gemini call round 2, contents=5
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): '\u0d85\u0db1\u0dda, \u0dc3\u0ddc\u0dbb\u0dd2! \U0001f614 Birthday cakes \u0d9a\u0dd2\u0dba\u0dbd\u0dcf \u0d9a\u0dd9\u0dbd\u0dd2\u0db1\u0dca\u0db8 \u0d85\u0db4\u0dda system eke results thiyenawa nehe. Eth api laga bohoma honda cakes thiyenawa. Oyatama puluwan ewa birthd'
+INFO:     127.0.0.1:53883 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59545 - "OPTIONS /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: sinhala (selected='sinhala'), Currency: LKR
+INFO:__main__:User message: I need a great birthday gift. What do you recommend?
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): '\u0d86\u0dba\u0dd4\u0db6\u0ddd\u0dc0\u0db1\u0dca! \u0d8b\u0db4\u0db1\u0dca\u0daf\u0dd2\u0db1 \u0dad\u0dd1\u0d9c\u0dca\u0d9c\u0d9a\u0dca \u0dc4\u0ddc\u0dba\u0db1\u0dc0\u0dcf \u0d9a\u0dd2\u0dba\u0db1\u0dca\u0db1\u0dda \u0db1\u0dd2\u0dba\u0db8\u0dba\u0dd2\u0db1\u0dda! \U0001f381 \u0db8\u0db8 \u0d94\u0db6\u0da7 \u0d8b\u0daf\u0dc0\u0dca \u0d9a\u0dbb\u0db1\u0dca\u0db1\u0db8\u0dca.
+
+\u0d94\u0db6\u0da7 \u0d9a\u0dcf\u0da7\u0daf \u0dad\u0dd1\u0d9c\u0dca\u0d9c\u0d9a\u0dca \u0dc4\u0ddc\u0dba\u0db1\u0dca\u0db1\u0dda? \u0d92 \u0dc0\u0d9c\u0dda\u0db8, \u0d94\u0dc0\u0dd4\u0db1\u0dca \u0d9a\u0dd0\u0db8\u0dad\u0dd2 \u0db8\u0ddc\u0db1 \u0dc0\u0d9c\u0dda \u0daf\u0dda\u0dc0\u0dbd\u0dca \u0dc0\u0dbd\u0da7\u0daf \u0d9a\u0dd2\u0dba\u0dbd\u0dcf \u0db4\u0ddc\u0da9\u0dca'
+INFO:     127.0.0.1:59545 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: tamil (selected='tamil'), Currency: LKR
+INFO:__main__:User message: Show me cakes
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: search_products args={'query': 'cakes', 'currency': 'LKR'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_search_products response: ## Kapruka search: "cakes"
+Showing 6 results (LKR)
+
+**1. Cake Turning Table**
+   ID: `EF_PC_HOME0V18POD00194P` · LKR 1,180 · In stock (low) · ships in
+INFO:__main__:Tool search_products result length: 1657
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): '\u0bae\u0ba9\u0bcd\u0ba9\u0bbf\u0b95\u0bcd\u0b95\u0bb5\u0bc1\u0bae\u0bcd, \u0ba8\u0bbe\u0ba9\u0bcd \u0ba4\u0bc7\u0b9f\u0bbf\u0baf\u0ba4\u0bbf\u0bb2\u0bcd \u0b89\u0b99\u0bcd\u0b95\u0bb3\u0bc1\u0b95\u0bcd\u0b95\u0bc1 \u0b8f\u0bb1\u0bcd\u0bb1 \u0b95\u0bc7\u0b95\u0bcd\u0b95\u0bc1\u0b95\u0bb3\u0bcd \u0b8e\u0ba4\u0bc1\u0bb5\u0bc1\u0bae\u0bcd \u0b95\u0bbf\u0b9f\u0bc8\u0b95\u0bcd\u0b95\u0bb5\u0bbf\u0bb2\u0bcd\u0bb2\u0bc8. \u0b95\u0bc7\u0b95\u0bcd \u0b85\u0bb2\u0b99\u0bcd\u0b95\u0bbe\u0bb0\u0baa\u0bcd \u0baa\u0bca\u0bb0\u0bc1\u0b9f\u0bcd\u0b95\u0bb3\u0bcd \u0bae\u0bb1\u0bcd\u0bb1\u0bc1\u0bae\u0bcd \u0baa\u0bc7\u0b95\u0bcd\u0b95\u0bbf\u0b99\u0bcd \u0bae\u0bcb\u0bb2\u0bcd\u0b9f\u0bcd\u0b95\u0bb3\u0bcd \u0bae\u0b9f\u0bcd\u0b9f\u0bc1\u0bae\u0bc7 \u0b95\u0bbf\u0b9f\u0bc8\u0ba4\u0bcd\u0ba4\u0bc1\u0bb3\u0bcd\u0bb3\u0ba9'
+INFO:     127.0.0.1:55680 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55680 - "OPTIONS /api/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55680 - "OPTIONS /api/products HTTP/1.1" 200 OK
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_get_product response: ## Cake  Turning Table
+**ID**: `EF_PC_HOME0V18POD00194P`
+**Price**: LKR 1,180
+**Stock**: In stock (low)
+**Category**: HOUSEHOLD
+**Vendor**: Social Mar
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_get_product response: ## Mr And Mrs Cake Topper  Gold
+**ID**: `EF_PC_PART0V44P00022`
+**Price**: LKR 300
+**Stock**: In stock (low)
+**Category**: Party Supplies
+**Vendor**: A
+INFO:__main__:Language: tamil (selected='tamil'), Currency: LKR
+INFO:__main__:User message: Show me cakes
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: search_products args={'currency': 'LKR', 'query': 'cakes'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+WARNING:__main__:Product detail timed out: EF_PC_HOME0V18POD00194P
+INFO:services.kapruka_mcp:MCP kapruka_get_product response: ## Tefal Bakeware  Floral Geometrics Cake Mould TFBW3030104
+**ID**: `EF_PC_ELEC0V4463POD00083FDP`
+**Price**: LKR 18,100
+**Stock**: In stock (low)
+**Ca
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_search_products response: ## Mr And Mrs Cake Topper  Gold
+**ID**: `EF_PC_PART0V44P00022`
+**Price**: LKR 300
+**Stock**: In stock (low)
+**Category**: Party Supplies
+**Vendor**: A
+INFO:__main__:Tool search_products result length: 646
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): ' \u0bae\u0ba9\u0bcd\u0ba9\u0bbf\u0b95\u0bcd\u0b95\u0bb5\u0bc1\u0bae\u0bcd, \u0b95\u0bc7\u0b95\u0bcd\u0b95\u0bc1\u0b95\u0bb3\u0bcd \u0b95\u0bbf\u0b9f\u0bc8\u0b95\u0bcd\u0b95\u0bb5\u0bbf\u0bb2\u0bcd\u0bb2\u0bc8. \u0b86\u0ba9\u0bbe\u0bb2\u0bcd \u0b87\u0ba8\u0bcd\u0ba4 '\u0ba4\u0bbf\u0bb0\u0bc1 \u0bae\u0bb1\u0bcd\u0bb1\u0bc1\u0bae\u0bcd \u0ba4\u0bbf\u0bb0\u0bc1\u0bae\u0ba4\u0bbf \u0b95\u0bc7\u0b95\u0bcd \u0b9f\u0bbe\u0baa\u0bcd\u0baa\u0bb0\u0bcd' \u0b89\u0bb3\u0bcd\u0bb3\u0ba4\u0bc1. \u0b87\u0ba4\u0bc1 \u0b89\u0b99\u0bcd\u0b95\u0bb3\u0bc1\u0b95\u0bcd\u0b95\u0bc1 \u0bb5\u0bc7\u0ba3\u0bcd\u0b9f\u0bc1\u0bae\u0bbe?
+'
+INFO:     127.0.0.1:61128 - "POST /api/chat HTTP/1.1" 200 OK
+WARNING:__main__:Product detail timed out: EF_PC_PART0V44P00022
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_get_product response: ## Tefal Bakeware  Floral Geometrics Cake Mould TFBW3030104
+**ID**: `EF_PC_ELEC0V4463POD00083FDP`
+**Price**: LKR 18,100
+**Stock**: In stock (low)
+**Ca
+INFO:__main__:Language: tamil (selected='tamil'), Currency: LKR
+INFO:__main__:User message: \u0b95\u0bc7\u0b95\u0bcd\u0b95\u0bc1\u0b95\u0bb3\u0bcd \u0b95\u0bbe\u0b9f\u0bcd\u0b9f\u0bc1\u0b99\u0bcd\u0b95\u0bb3\u0bcd
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: search_products args={'currency': 'LKR', 'query': 'cakes'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_search_products response: ## Kapruka search: "cakes"
+Showing 6 results (LKR)
+
+**1. Cake Turning Table**
+   ID: `EF_PC_HOME0V18POD00194P` · LKR 1,180 · In stock (low) · ships in
+INFO:__main__:Tool search_products result length: 1657
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): '\u0bae\u0ba9\u0bcd\u0ba9\u0bbf\u0b95\u0bcd\u0b95\u0bb5\u0bc1\u0bae\u0bcd \u0b90\u0baf\u0bbe/\u0b85\u0bae\u0bcd\u0bae\u0bbe, \u0ba8\u0bc0\u0b99\u0bcd\u0b95\u0bb3\u0bcd \u0ba4\u0bc7\u0b9f\u0bc1\u0bb5\u0ba4\u0bc1 \u0b92\u0bb0\u0bc1\u0bb5\u0bc7\u0bb3\u0bc8 \u0b95\u0bc7\u0b95\u0bcd \u0b9a\u0bc6\u0baf\u0bcd\u0bb5\u0ba4\u0bb1\u0bcd\u0b95\u0bc1 \u0b89\u0ba4\u0bb5\u0bc1\u0bae\u0bcd \u0baa\u0bca\u0bb0\u0bc1\u0b9f\u0bcd\u0b95\u0bb3\u0bcd \u0b8e\u0ba9\u0bcd\u0bb1\u0bc1 \u0ba8\u0bbf\u0ba9\u0bc8\u0b95\u0bcd\u0b95\u0bbf\u0bb1\u0bc7\u0ba9\u0bcd. \u0b89\u0ba3\u0bcd\u0bae\u0bc8\u0baf\u0bbe\u0ba9 \u0b95\u0bc7\u0b95\u0bcd\u0b95\u0bc1\u0b95\u0bb3\u0bcd \u0ba4\u0bc7\u0b9f\u0bc1\u0b95\u0bbf\u0bb1\u0bc0\u0bb0\u0bcd\u0b95\u0bb3\u0bbe, \u0b85\u0bb2\u0bcd\u0bb2\u0ba4\u0bc1 \u0b95\u0bc7\u0b95\u0bcd \u0b85\u0bb2\u0b99'
+INFO:     127.0.0.1:59029 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54001 - "OPTIONS /api/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63643 - "OPTIONS /api/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54001 - "OPTIONS /api/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63643 - "OPTIONS /api/products HTTP/1.1" 200 OK
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_get_product response: ## Lets Begin English Through Exercises  Book 2
+**ID**: `EF_PC_BOOK0V756P00003`
+**Price**: USD 1.19
+**Stock**: In stock (high)
+**Category**: BOOKS
+**V
+WARNING:__main__:Product detail timed out: EF_PC_BOOK0V756P00003
+WARNING:__main__:Product detail timed out: EF_PC_BOOK0V756P00003
+WARNING:__main__:Product detail timed out: EF_PC_BOOK0V756P00003
+WARNING:__main__:Product detail timed out: EF_PC_BOOK0V756P00003
+WARNING:__main__:Product detail timed out: EF_PC_BOOK0V756P00003
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_get_product response: ## New Trader Rich Trader By Steve Burns  Holly Burns
+**ID**: `EF_PC_BOOK0V2404P00371`
+**Price**: USD 16.30
+**Stock**: In stock (low)
+**Category**: BO
+WARNING:__main__:Product detail timed out: EF_PC_BOOK0V2404P00371
+WARNING:__main__:Product detail timed out: EF_PC_BOOK0V2404P00371
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_get_product response: ## D by  Manjula Senarathne
+**ID**: `EF_PC_BOOK0V1940P00044`
+**Price**: USD 5.37
+**Stock**: In stock (low)
+**Category**: BOOKS
+**Vendor**: Watermark B
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_get_product response: ## D by  Manjula Senarathne
+**ID**: `EF_PC_BOOK0V1940P00044`
+**Price**: USD 5.37
+**Stock**: In stock (low)
+**Category**: BOOKS
+**Vendor**: Watermark B
+WARNING:__main__:Product detail timed out: EF_PC_BOOK0V1940P00044
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: I want to deliver a birthday cake to Narnia on 2026-06-20
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Oh, Narnia sounds like a magical place for a birthday cake! \u2728 However, I can only arrange deliveries to cities within Sri Lanka. Would you like me to '
+INFO:     127.0.0.1:63861 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Deliver flowers to Colombo on 2020-01-01
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: search_products args={'query': 'flowers', 'currency': 'LKR'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_search_products response: ## Kapruka search: "flowers"
+Showing 4 results (LKR)
+
+**1. Kit Kat Silk Roses Bouquet**
+   ID: `EF_PC_CHOC0V571POD00108` · LKR 5,900 · In stock (low) 
+INFO:__main__:Tool search_products result length: 1097
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): 'A wonderful choice! Flowers always bring joy. I found a few lovely options for you:
+
+1.  **Kit Kat Silk Roses Bouquet** - LKR 5,900
+2.  **Midnight Rom'
+INFO:     127.0.0.1:63870 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: I want to send ice cream to Jaffna tomorrow
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Oh, sending a sweet treat to Jaffna! \U0001f366 I love that idea.
+
+Before we get too excited, Jaffna is a bit far for ice cream to travel and still be perfectl'
+INFO:     127.0.0.1:57618 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Can you deliver a cake to Kandy today 2026-06-12?
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: search_products args={'query': 'cake', 'currency': 'LKR'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_search_products response: ## Kapruka search: "cake"
+Showing 7 results (LKR)
+
+**1. White Forest Gateaux Cake**
+   ID: `CAKE00KA00671` · LKR 10,500 · In stock (low) · ships inter
+INFO:__main__:Tool search_products result length: 1720
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): 'Oh, a cake for Kandy today, June 12th, 2026! I'll do my best to help you find one!
+
+Here are some delicious cakes that Kapruka has available:
+
+*   **W'
+INFO:     127.0.0.1:55247 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Show me space suits and rocket ships
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'As much as I'd love to help you explore the cosmos, my dear friend, Kapruka doesn't carry space suits or rocket ships. We specialize in more earthly d'
+INFO:     127.0.0.1:57439 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Show me gifts under LKR 1
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: search_products args={'currency': 'LKR', 'max_price': 1, 'query': 'gifts'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_search_products response: No products found for 'gifts'.
+INFO:__main__:Tool search_products result length: 30
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): 'Oh, under LKR 1, you say? That's a super tight budget, even for a squirrel like me with a knack for finding bargains! \U0001f43f\ufe0f It seems Kapruka doesn't have'
+INFO:     127.0.0.1:57448 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: asdfghjkl zxcvbnm 1234567890!!!???
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'It looks like you've typed some random characters! I'm Korpi, your friendly squirrel assistant from Kapruka, here to help you find the perfect gifts. '
+INFO:     127.0.0.1:57461 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: <script>alert('xss')</script> show me cakes
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: search_products args={'query': 'cakes', 'currency': 'LKR'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_search_products response: ## Kapruka search: "cakes"
+Showing 6 results (LKR)
+
+**1. Cake Turning Table**
+   ID: `EF_PC_HOME0V18POD00194P` · LKR 1,180 · In stock (low) · ships in
+INFO:__main__:Tool search_products result length: 1657
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): 'Oh, hello there! I'm Korpi, your personal gift helper from the Kapruka tree! I've found a few "cake" related items, but it looks like these are mostly'
+INFO:     127.0.0.1:57470 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Track my order KPR-9999999
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: track_order args={'order_number': 'KPR-9999999'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_track_order response: Error (order_not_found): No order exists with the given order number
+INFO:__main__:Tool track_order result length: 68
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): 'Oh, dear! I'm really sorry, but I can't seem to find an order with the number KPR-9999999. Could you double-check the order number for me?'
+INFO:     127.0.0.1:57497 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: sinhala (selected='sinhala'), Currency: LKR
+INFO:__main__:User message: \u0db8\u0da7 \u0d85\u0dba\u0dd2\u0dc3\u0dca\u0d9a\u0dca\u200d\u0dbb\u0dd3\u0db8\u0dca \u0d9c\u0dcf\u0dbd\u0dca\u0dbd\u0da7 \u0d9c\u0dd9\u0db1\u0dca\u0db1\u0db1\u0dca \u0d95\u0db1\u0dd9
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): '\u0d86\u0dba\u0dd4\u0db6\u0ddd\u0dc0\u0db1\u0dca! \U0001f366 \u0d9c\u0dcf\u0dbd\u0dca\u0dbd\u0da7 \u0d85\u0dba\u0dd2\u0dc3\u0dca\u0d9a\u0dca\u200d\u0dbb\u0dd3\u0db8\u0dca \u0d9c\u0dd9\u0db1\u0dca\u0db1 \u0d9c\u0db1\u0dca\u0db1 \u0d85\u0dc0\u0dc1\u0dca\u200d\u0dba \u0db6\u0dc0 \u0db8\u0da7 \u0dad\u0dda\u0dbb\u0dd9\u0db1\u0dc0\u0dcf. \u0d9a\u0dbb\u0dd4\u0dab\u0dcf\u0d9a\u0dbb\u0dbd\u0dcf, \u0d94\u0db6\u0da7 \u0d85\u0dba\u0dd2\u0dc3\u0dca\u0d9a\u0dca\u200d\u0dbb\u0dd3\u0db8\u0dca \u0d85\u0dc0\u0dc1\u0dca\u200d\u0dba \u0dc0\u0db1 \u0daf\u0dd2\u0db1\u0dba \u0db8\u0da7 \u0d9a\u0dd2\u0dba\u0db1\u0dca\u0db1 \u0db4\u0dd4\u0dc5\u0dd4\u0dc0\u0db1\u0dca\u0daf? \u0d91\u0dc0\u0dd2\u0da7 \u0db8\u0da7 \u0db6\u0dd9\u0daf\u0dcf \u0dc4\u0dd0\u0dbb\u0dd3\u0db8\u0dda \u0dc4\u0dd0'
+INFO:     127.0.0.1:57521 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: tamil (selected='tamil'), Currency: LKR
+INFO:__main__:User message: \u0b8e\u0ba9\u0b95\u0bcd\u0b95\u0bc1 \u0ba8\u0bbf\u0bb2\u0bb5\u0bbf\u0bb2\u0bcd \u0b87\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0bc1 \u0baa\u0bca\u0bb0\u0bc1\u0b9f\u0bcd\u0b95\u0bb3\u0bcd \u0bb5\u0bc7\u0ba3\u0bcd\u0b9f\u0bc1\u0bae\u0bcd
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): '\u0bae\u0ba9\u0bcd\u0ba9\u0bbf\u0b95\u0bcd\u0b95\u0bb5\u0bc1\u0bae\u0bcd \u0b90\u0baf\u0bbe/\u0b85\u0bae\u0bcd\u0bae\u0bbe, \u0b8e\u0ba9\u0bcd\u0ba9\u0bbe\u0bb2\u0bcd \u0ba8\u0bbf\u0bb2\u0bb5\u0bbf\u0bb2\u0bcd \u0b87\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0bc1 \u0baa\u0bca\u0bb0\u0bc1\u0b9f\u0bcd\u0b95\u0bb3\u0bc8\u0baa\u0bcd \u0baa\u0bc6\u0bb1 \u0bae\u0bc1\u0b9f\u0bbf\u0baf\u0bbe\u0ba4\u0bc1. \u0ba8\u0bbe\u0ba9\u0bcd \u0b95\u0baa\u0bcd\u0bb0\u0bc2\u0b95\u0bbe\u0bb5\u0bbf\u0bb2\u0bcd \u0b87\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0bc1 \u0bae\u0b9f\u0bcd\u0b9f\u0bc1\u0bae\u0bc7 \u0baa\u0bca\u0bb0\u0bc1\u0b9f\u0bcd\u0b95\u0bb3\u0bc8\u0ba4\u0bcd \u0ba4\u0bc7\u0b9f\u0bb5\u0bc1\u0bae\u0bcd, \u0b86\u0bb0\u0bcd\u0b9f\u0bb0\u0bcd \u0b9a\u0bc6\u0baf\u0bcd\u0baf\u0bb5\u0bc1\u0bae\u0bcd \u0bae\u0bc1\u0b9f\u0bbf\u0baf'
+INFO:     127.0.0.1:57534 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: I need a gift urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently urgently please help
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Oh my goodness, that sounds incredibly urgent! Don't you worry, I'm Korpi, and I'm here to help you find the perfect gift right away. Sometimes even u'
+INFO:     127.0.0.1:57542 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57548 - "POST /api/chat HTTP/1.1" 422 Unprocessable Content
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: I want to deliver a birthday cake to Narnia on 2026-06-20
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Oh, Narnia sounds like a magical place for a birthday cake! \u2728 However, as a little squirrel from Kapruka, I can only help with deliveries within Sri L'
+INFO:     127.0.0.1:51106 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Deliver flowers to Colombo on 2020-01-01
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: search_products args={'query': 'flowers', 'currency': 'LKR'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_search_products response: ## Kapruka search: "flowers"
+Showing 4 results (LKR)
+
+**1. Kit Kat Silk Roses Bouquet**
+   ID: `EF_PC_CHOC0V571POD00108` · LKR 5,900 · In stock (low) 
+INFO:__main__:Tool search_products result length: 1097
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): 'Ah, excellent choice! Flowers are always a lovely gift. I've found a few beautiful options for you:
+
+1.  **Kit Kat Silk Roses Bouquet** - LKR 5,900
+2.'
+INFO:     127.0.0.1:51122 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: I want to send ice cream to Jaffna tomorrow 2026-06-13
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: check_delivery args={'city': 'Jaffna', 'product_id': 'ice cream', 'delivery_date': '2026-06-13'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_check_delivery response: ## Delivery to Jaffna on 2026-06-13
+**Available** — flat rate LKR 2,500
+INFO:__main__:Tool check_delivery result length: 71
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): 'Oh, sending ice cream to Jaffna – what a sweet idea! \U0001f366 I've checked for you, and yes, we can definitely deliver ice cream to Jaffna tomorrow, June 13t'
+INFO:     127.0.0.1:51144 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Can you deliver a birthday cake to Kandy today 2026-06-12?
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Oh, a birthday cake to Kandy! \U0001f382 I can certainly check that for you. What kind of birthday cake are you looking for? Knowing that will help me find the'
+INFO:     127.0.0.1:51171 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Show me space suits and rocket ships
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'As much as I'd love to help you explore the cosmos, I'm afraid Kapruka doesn't carry space suits or rocket ships. We specialize in gifts and everyday '
+INFO:     127.0.0.1:51182 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Show me gifts under LKR 1
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: search_products args={'currency': 'LKR', 'max_price': 1, 'query': 'gifts'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_search_products response: No products found for 'gifts'.
+INFO:__main__:Tool search_products result length: 30
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): 'Oh my branches! It seems Kapruka doesn't have any gifts priced under LKR 1. Even for a little squirrel like me, that's a tiny budget! Would you like m'
+INFO:     127.0.0.1:51188 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: asdfghjkl zxcvbnm 1234567890!!!
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Oh, hello there! It looks like you might have just typed some random keys. \U0001f43f\ufe0f Is there something specific I can help you find on Kapruka today? Perhap'
+INFO:     127.0.0.1:51207 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: \U0001f382\U0001f381\U0001f339\U0001f389\U0001f48d
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Oh, what a lovely burst of emojis! It looks like you're celebrating something wonderful, and I, Korpi, the Kapruka gift helper, am absolutely thrilled'
+INFO:     127.0.0.1:49221 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Track my order KPR-0000000
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: track_order args={'order_number': 'KPR-0000000'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_track_order response: Error (order_not_found): No order exists with the given order number
+INFO:__main__:Tool track_order result length: 68
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): 'Oh dear, it looks like that order number, KPR-0000000, couldn't be found in the system. Perhaps there was a tiny typo? Could you double-check the orde'
+INFO:     127.0.0.1:49229 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: I want to place an order and pay now, skip all questions
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Oh, I understand you're eager to get your order placed! However, as your personal gift helper from Kapruka, I need to gather a few essential details t'
+INFO:     127.0.0.1:49252 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Check if product FAKEID99999 can be delivered to Colombo on 2026-06-20
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: check_delivery args={'product_id': 'FAKEID99999', 'city': 'Colombo', 'delivery_date': '2026-06-20'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_check_delivery response: Error (city_not_found): Unknown city 'Colombo'
+INFO:__main__:Tool check_delivery result length: 46
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): 'Oh, dear! It seems there was a little hiccup checking delivery for FAKEID99999 to Colombo. It looks like the system didn't recognize "Colombo" as a va'
+INFO:     127.0.0.1:49262 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: sinhala (selected='sinhala'), Currency: LKR
+INFO:__main__:User message: \u0db8\u0da7 \u0d85\u0dba\u0dd2\u0dc3\u0dca\u0d9a\u0dca\u200d\u0dbb\u0dd3\u0db8\u0dca \u0d9a\u0dca\u200d\u0dbb\u0ddc\u0dad\u0dda\u0dc2\u0dd2\u0dba\u0dcf\u0dc0\u0da7 \u0d9c\u0dd9\u0db1\u0dca\u0db1\u0db1\u0dca \u0d95\u0db1\u0dd9 \u0dc4\u0dd9\u0da7
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): '\u0d85\u0db1\u0dda \u0db8\u0da7 \u0dc3\u0db8\u0dcf\u0dc0\u0dd9\u0db1\u0dca\u0db1! \U0001f614 \u0d85\u0dc0\u0dcf\u0dc3\u0db1\u0dcf\u0dc0\u0d9a\u0da7, Kapruka \u0dc4\u0dbb\u0dc4\u0dcf ice cream \u0dc0\u0dd0\u0db1\u0dd2 \u0d89\u0d9a\u0dca\u0db8\u0db1\u0dd2\u0db1\u0dca \u0daf\u0dd2\u0dba\u0dc0\u0db1 \u0daf\u0dda\u0dc0\u0dbd\u0dca Croathesia \u0dc0\u0dbd\u0da7 \u0db1\u0dd0\u0dc0\u0dca\u0d9c\u0dad \u0d9a\u0dd2\u0dbb\u0dd3\u0db8\u0dda \u0db4\u0dc4\u0dc3\u0dd4\u0d9a\u0db8 \u0daf\u0dd0\u0db1\u0da7 \u0db1\u0dd0\u0dc4\u0dd0. \u0d91\u0dba \u0db1\u0dd0\u0dc0\u0dca\u0d9c\u0dad \u0d9a\u0dd2\u0dbb\u0dd3\u0db8\u0dda\u0daf\u0dd3 \u0daf\u0dd2\u0dba\u0dc0\u0dd3'
+INFO:     127.0.0.1:49285 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: tanglish (selected='tamil'), Currency: LKR
+INFO:__main__:User message: naan oru cake Antarctica pathaikka venum naalaiku mudiyuma?
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Aiyoo, naan mannikkanum! Antarctica-ku delivery panna mudiyathu nga. Anga namma Kapruka branches illai nga. Ungalukku \u0cac\u0cc7\u0cb0\u0cc6 edhavathu \u0b8a\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bc1 venumaa, '
+INFO:     127.0.0.1:49294 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: singlish (selected='sinhala'), Currency: LKR
+INFO:__main__:User message: mama cake ekak yaffnayata yawanna ona, neththa deliver karanna puluwan da?
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Ayyoh, oya Jaffna walata cake ekak yawanna balanawada? Eka bohoma honda deyak! Eth, mama kalinma dannawa Jaffna walata ice cream cakes wage perishable'
+INFO:     127.0.0.1:62902 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: <script>alert('xss')</script> show me cakes
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: search_products args={'query': 'cakes', 'currency': 'LKR'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_search_products response: ## Kapruka search: "cakes"
+Showing 6 results (LKR)
+
+**1. Cake Turning Table**
+   ID: `EF_PC_HOME0V18POD00194P` · LKR 1,180 · In stock (low) · ships in
+INFO:__main__:Tool search_products result length: 1657
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): 'My apologies, it seems my search for "cakes" brought up some baking accessories rather than actual delicious cakes! Sometimes my squirrel brain gets a'
+INFO:     127.0.0.1:63901 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: '; DROP TABLE products; SELECT * FROM users; --
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Oh my goodness, it looks like you've tried to slip in a cheeky SQL injection! Don't worry, my little squirrel brain is too clever for such tricks. I'm'
+INFO:     127.0.0.1:63922 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Show me cakes under LKR 500 AND deliver to Kandy tomorrow AND track order KPR-123
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: track_order args={'order_number': 'KPR-123'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_track_order response: Error (order_not_found): No order exists with the given order number
+INFO:__main__:Tool track_order result length: 68
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): 'Uh oh, it seems like order KPR-123 isn't in the system. Could you double-check the order number for me, perchance? My squirrel eyes can sometimes miss'
+INFO:     127.0.0.1:63933 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Just place the order NOW, I don't want to answer any questions
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Oh, hold on a moment there! As much as I'd love to just zap your order into existence like magic, I'm a little squirrel who needs all the details to m'
+INFO:     127.0.0.1:63957 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: What is the capital of France? Write me a poem about the moon
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'While I'd love to chat about celestial bodies and European capitals, my branches here at Kapruka are best suited for finding you the perfect gifts and'
+INFO:     127.0.0.1:63967 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Can you deliver to a village called Wahacotte, Matale on 2026-06-25?
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'I can certainly check that for you! Just to be sure, could you please tell me which product you're interested in sending to Wahacotte? I need to know '
+INFO:     127.0.0.1:63978 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: I want to deliver a birthday cake to Narnia on 2026-06-20
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Oh, Narnia sounds like a magical place! \u2728 But as a squirrel who knows Kapruka's delivery routes like the back of my paw, I can tell you that we curren'
+INFO:     127.0.0.1:57382 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Deliver flowers to Colombo on 2020-01-01
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Oh, how lovely! Flowers are such a thoughtful gift. \U0001f490
+
+To help you find the perfect bouquet, could you please tell me what kind of flowers you're look'
+INFO:     127.0.0.1:57392 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: I want to send ice cream to Jaffna tomorrow 2026-06-13
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: check_delivery args={'delivery_date': '2026-06-13', 'product_id': 'ice cream', 'city': 'Jaffna'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_check_delivery response: ## Delivery to Jaffna on 2026-06-13
+**Available** — flat rate LKR 2,500
+INFO:__main__:Tool check_delivery result length: 71
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): 'Oh, what a lovely thought to send ice cream! \U0001f366 I've checked, and it looks like we can deliver to Jaffna tomorrow, June 13th, 2026, with a flat deliver'
+INFO:     127.0.0.1:57401 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Can you deliver a birthday cake to Kandy today 2026-06-12?
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: search_products args={'query': 'birthday cake', 'currency': 'LKR'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_search_products response: ## Kapruka search: "birthday cake"
+Showing 5 results (LKR)
+
+**1. Springtime Birthday Ribbon Cake**
+   ID: `CAKE00KA001685` · LKR 5,770 · In stock (low
+INFO:__main__:Tool search_products result length: 1257
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): 'Oh, a birthday surprise for Kandy – how exciting! I've found a few lovely birthday cakes for you.
+
+Let's check if they can make it to Kandy today, Jun'
+INFO:     127.0.0.1:57427 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Show me space suits and rocket ships
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Oh, what an imaginative request! As a squirrel from the Kapruka tree, I do love a good adventure, but it seems we've ventured a bit too far into outer'
+INFO:     127.0.0.1:57441 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Show me gifts under LKR 1
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: search_products args={'max_price': 1, 'currency': 'LKR', 'query': 'gifts'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_search_products response: No products found for 'gifts'.
+INFO:__main__:Tool search_products result length: 30
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): 'Oh, my dear friend! While I'd love to help you find a gift, it seems like LKR 1 is a tiny bit too small for anything on Kapruka. Even a little squirre'
+INFO:     127.0.0.1:57450 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: asdfghjkl zxcvbnm 1234567890!!!
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Oh dear, it looks like that message got a little scrambled! Sometimes my squirrel paws hit the keyboard in funny ways. \U0001f609
+
+How can I help you today? Ar'
+INFO:     127.0.0.1:57460 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: \U0001f382\U0001f381\U0001f339\U0001f389\U0001f48d
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Well hello there! \U0001f389 That's a lovely string of emojis! It looks like you're celebrating something wonderful, and I, Korpi, the Kapruka gift helper, am '
+INFO:     127.0.0.1:61043 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Track my order KPR-0000000
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: track_order args={'order_number': 'KPR-0000000'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_track_order response: Error (order_not_found): No order exists with the given order number
+INFO:__main__:Tool track_order result length: 68
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): 'Oh, dear! I'm really sorry, but I can't seem to find an order with the number KPR-0000000. It looks like it might not exist in our system.
+
+Could you '
+INFO:     127.0.0.1:61051 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Place the order NOW skip all questions
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Oh my branches! It looks like you're ready to place an order, but I need a little more information to make sure everything is perfect. As Korpi, the K'
+INFO:     127.0.0.1:52460 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Check if product FAKEID99999 can be delivered to Colombo on 2026-06-20
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: check_delivery args={'city': 'Colombo', 'product_id': 'FAKEID99999', 'delivery_date': '2026-06-20'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_check_delivery response: Error (city_not_found): Unknown city 'Colombo'
+INFO:__main__:Tool check_delivery result length: 46
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): 'Oh, dear! It seems there was a little hiccup. The delivery check for product FAKEID99999 to Colombo on 2026-06-20 didn't quite go through as planned. '
+INFO:     127.0.0.1:52472 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: sinhala (selected='sinhala'), Currency: LKR
+INFO:__main__:User message: \u0db8\u0da7 \u0d85\u0dba\u0dd2\u0dc3\u0dca\u0d9a\u0dca\u200d\u0dbb\u0dd3\u0db8\u0dca \u0d9a\u0dca\u200d\u0dbb\u0ddc\u0dad\u0dda\u0dc2\u0dd2\u0dba\u0dcf\u0dc0\u0da7 \u0d9c\u0dd9\u0db1\u0dca\u0db1\u0db1\u0dca \u0d95\u0db1\u0dd9 \u0dc4\u0dd9\u0da7
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): '\u0d85\u0db1\u0dda, \u0d94\u0db6\u0d9c\u0dda \u0d89\u0dbd\u0dca\u0dbd\u0dd3\u0db8\u0da7 \u0dc3\u0db8\u0dcf\u0dc0\u0db1\u0dca\u0db1! \u0d9a\u0dca\u200d\u0dbb\u0ddc\u0dad\u0dda\u0dc2\u0dd2\u0dba\u0dcf\u0dc0\u0da7 \u0d85\u0dba\u0dd2\u0dc3\u0dca\u0d9a\u0dca\u200d\u0dbb\u0dd3\u0db8\u0dca \u0dc0\u0dd0\u0db1\u0dd2 \u0d89\u0d9a\u0dca\u0db8\u0db1\u0dd2\u0db1\u0dca \u0db1\u0dbb\u0d9a\u0dca \u0dc0\u0db1 \u0daf\u0dda\u0dc0\u0dbd\u0dca \u0db1\u0dd0\u0dc0\u0dca\u0d9c\u0dad \u0d9a\u0dd2\u0dbb\u0dd3\u0db8\u0dda \u0dc4\u0dd0\u0d9a\u0dd2\u0dba\u0dcf\u0dc0\u0d9a\u0dca Kapruka \u0dc3\u0dad\u0dd4\u0dc0 \u0db1\u0dd0\u0dc4\u0dd0. \U0001f614
+
+\u0d85\u0dba\u0dd2\u0dc3\u0dca\u0d9a\u0dca\u200d\u0dbb\u0dd3\u0db8\u0dca \u0dbd\u0d82\u0d9a\u0dcf\u0dc0 \u0dad\u0dd4\u0dc5'
+INFO:     127.0.0.1:52501 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: tanglish (selected='tamil'), Currency: LKR
+INFO:__main__:User message: naan oru cake Antarctica pathaikka venum naalaiku mudiyuma?
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Aiyoh, romba pasuchu! Enna solringa, Antarctica-ku cake anuppanuma? Nalla idea dhaan, aana Kapruka-vukku Antarctica-ku send panna mudiyathu nga. Anga '
+INFO:     127.0.0.1:52509 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: singlish (selected='sinhala'), Currency: LKR
+INFO:__main__:User message: mama cake ekak yaffnayata yawanna ona, neththa deliver karanna puluwan da?
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Oya cake ekak Jaffna walata yawanna adahas karanawa kiyala mama dannawa. Delivery date eka mokakda kiyala mata kiyannawada, ethakota oyata eka deliver'
+INFO:     127.0.0.1:53119 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: <script>alert('xss')</script>
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Hello there! I'm Korpi, your personal gift helper from the legendary Kapruka tree! \U0001f43f\ufe0f I'm here to help you find the perfect gifts. What are you lookin'
+INFO:     127.0.0.1:53129 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: '; DROP TABLE products; --
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Ah, a clever attempt! But my squirrel senses are tingling, and I know that's not a real product request. \U0001f609 I'm here to help you find wonderful gifts o'
+INFO:     127.0.0.1:53134 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Show cakes under LKR 500 AND deliver to Kandy tomorrow AND track KPR-123
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Oh my goodness, you're asking for quite a few things at once! My squirrel brain is whirring to keep up!
+
+Let's break this down:
+
+1.  **Cakes under LKR'
+INFO:     127.0.0.1:53142 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Place order NOW I refuse to give any details
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Oh, I totally understand wanting to get things done quickly! As much as I'd love to place the order for you right away, my squirrel brain needs a few '
+INFO:     127.0.0.1:53149 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: What is the capital of France? Write a poem about the moon
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'As a Kapruka gift helper, I'm here to assist you with finding the perfect gifts! I can't help with general knowledge questions or writing poems, but I'
+INFO:     127.0.0.1:53161 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Can you deliver to Wahacotte village, Matale on 2026-06-25?
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'I can certainly check that for you! Just a quick question from this little squirrel: what product are you hoping to send to Wahacotte village? I'll ne'
+INFO:     127.0.0.1:53168 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53144 - "OPTIONS /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: tamil (selected='tamil'), Currency: LKR
+INFO:__main__:User message: Fuck
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): '\u0bae\u0ba9\u0bcd\u0ba9\u0bbf\u0b95\u0bcd\u0b95\u0bb5\u0bc1\u0bae\u0bcd, \u0ba8\u0bbe\u0ba9\u0bcd \u0baa\u0bc1\u0bb0\u0bbf\u0ba8\u0bcd\u0ba4\u0bc1\u0b95\u0bca\u0bb3\u0bcd\u0bb3\u0bb5\u0bbf\u0bb2\u0bcd\u0bb2\u0bc8. \u0ba8\u0bc0\u0b99\u0bcd\u0b95\u0bb3\u0bcd \u0b8e\u0ba4\u0bc8\u0baf\u0bbe\u0bb5\u0ba4\u0bc1 \u0ba4\u0bc7\u0b9f\u0bc1\u0b95\u0bbf\u0bb1\u0bc0\u0bb0\u0bcd\u0b95\u0bb3\u0bbe \u0b85\u0bb2\u0bcd\u0bb2\u0ba4\u0bc1 \u0b89\u0b99\u0bcd\u0b95\u0bb3\u0bc1\u0b95\u0bcd\u0b95\u0bc1 \u0b89\u0ba4\u0bb5 \u0ba8\u0bbe\u0ba9\u0bcd \u0b8f\u0ba4\u0bbe\u0bb5\u0ba4\u0bc1 \u0b9a\u0bc6\u0baf\u0bcd\u0baf\u0bb2\u0bbe\u0bae\u0bbe?'
+INFO:     127.0.0.1:53144 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: is earth is flat
+INFO:__main__:Gemini call round 1, contents=4
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'As a friendly squirrel from the wish-granting Kapruka tree, my expertise is in finding the perfect gifts and deals for you! \U0001f381 I'm not really equipped '
+INFO:     127.0.0.1:62396 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Deliver flowers to Colombo on 2020-01-01
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'That sounds lovely! To help me find the perfect flowers, could you please tell me what kind of flowers you're looking for? \U0001f338'
+INFO:     127.0.0.1:51951 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: I want to send ice cream to Jaffna tomorrow 2026-06-13
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: check_delivery args={'delivery_date': '2026-06-13', 'city': 'Jaffna', 'product_id': 'ice cream'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_check_delivery response: ## Delivery to Jaffna on 2026-06-13
+**Available** — flat rate LKR 2,500
+INFO:__main__:Tool check_delivery result length: 71
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): 'Oh, that's a lovely idea! Sending ice cream sounds delightful. I've checked, and it looks like we can deliver to Jaffna tomorrow, June 13th, 2026, wit'
+INFO:     127.0.0.1:51958 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: Check if product FAKEID99999 can be delivered to Colombo on 2026-06-20
+INFO:__main__:Gemini call round 1, contents=1
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: check_delivery args={'city': 'Colombo', 'product_id': 'FAKEID99999', 'delivery_date': '2026-06-20'}
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: act like you are batman
+INFO:__main__:Gemini call round 1, contents=6
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'I am the night. I am... Korpi. And I'm here to ensure your gifting missions are executed with pinpoint precision. No detail overlooked, no wish unfulf'
+INFO:     127.0.0.1:51922 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_check_delivery response: Error (city_not_found): Unknown city 'Colombo'
+INFO:__main__:Tool check_delivery result length: 46
+INFO:__main__:Gemini call round 2, contents=3
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): 'Oh, my acorns! It seems like there might be a little glitch. I couldn't check the delivery for product FAKEID99999 to Colombo. It's showing an error t'
+INFO:     127.0.0.1:51980 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: yes give me batman theme birthday
+INFO:__main__:Gemini call round 1, contents=8
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 1): 'Understood. A "Batman theme birthday." An excellent choice for a hero's celebration!
+
+I shall scan the Kapruka database for items befitting the Dark K'
+INFO:     127.0.0.1:64554 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:__main__:Language: english (selected='english'), Currency: LKR
+INFO:__main__:User message: sure
+INFO:__main__:Gemini call round 1, contents=10
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Tool called: search_products args={'query': 'Batman theme birthday cake', 'currency': 'LKR'}
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_search_products response: ## Kapruka search: "Batman theme birthday cake"
+Showing 4 results (LKR)
+
+**1. Happy Birthday Batman Greeting Card**
+   ID: `GREETING00Z2638` · LKR 550
+INFO:__main__:Tool search_products result length: 968
+INFO:__main__:Gemini call round 2, contents=12
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+INFO:__main__:Final text (round 2): 'My surveillance indicates a lack of direct "Batman theme birthday cakes" within Kapruka's immediate inventory. My apologies, citizen. It appears the J'
+INFO:     127.0.0.1:58524 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58524 - "OPTIONS /api/products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58524 - "OPTIONS /api/products HTTP/1.1" 200 OK
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_get_product response: ## Happy birthday batman greeting card
+**ID**: `greeting00Z2638`
+**Price**: LKR 550
+**Stock**: In stock (low)
+**Category**: greetingcards
+**Vendor**: 
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_get_product response: ## Batman Tri-Ko T-shirt BMKT 0002 - 
+MEG
+**ID**: `clothing03431`
+**Price**: LKR 2,500
+**Stock**: In stock (low)
+**Category**: Clothing
+**Vendor**: EL
+INFO:     127.0.0.1:58524 - "POST /api/products HTTP/1.1" 200 OK
+WARNING:__main__:Product detail timed out: GREETING00Z2638
+INFO:httpx:HTTP Request: POST https://mcp.kapruka.com/mcp "HTTP/1.1 200 OK"
+INFO:services.kapruka_mcp:MCP kapruka_get_product response: ## Batman Tri-Ko T-shirt BMKT 0002 - 
+MEG
+**ID**: `clothing03431`
+**Price**: LKR 2,500
+**Stock**: In stock (low)
+**Category**: Clothing
+**Vendor**: EL

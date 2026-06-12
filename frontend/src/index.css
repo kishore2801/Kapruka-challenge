@@ -1,11 +1,17 @@
-/* ── Reset & base ───────────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ── Reset & base ────────────────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html, body, #root {
   height: 100%;
+  height: 100dvh;
   width: 100%;
   overflow: hidden;
+  background-color: #050d1a;
 }
+
+html { overscroll-behavior: none; }
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -13,111 +19,439 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ── Scrollbar ──────────────────────────────────────────────────────────────── */
-::-webkit-scrollbar { width: 3px; }
+/* ── Scrollbar ───────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; height: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.18); }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.25); }
 
-/* ── Animated background blobs ──────────────────────────────────────────────── */
+/* ── Background blobs ────────────────────────────────────────────────────────── */
 .blob {
-  position: fixed;
-  border-radius: 50%;
-  filter: blur(90px);
-  animation: blobFloat 12s ease-in-out infinite;
-  pointer-events: none;
-  z-index: 0;
+  position: fixed; border-radius: 50%;
+  filter: blur(100px);
+  animation: blobFloat 15s ease-in-out infinite;
+  pointer-events: none; z-index: 0;
+  opacity: 0.6;
 }
 .blob-1 {
-  width: 480px; height: 480px;
-  background: radial-gradient(circle, rgba(16,185,129,0.14) 0%, transparent 70%);
-  top: -130px; left: -100px;
-  animation-duration: 13s;
-  animation-delay: 0s;
+  width: 50vw; height: 50vw; max-width: 600px; max-height: 600px;
+  background: radial-gradient(circle, rgba(218,83,44,0.18) 0%, transparent 70%);
+  top: -10%; left: -10%;
+  animation-duration: 18s; animation-delay: 0s;
 }
 .blob-2 {
-  width: 580px; height: 580px;
-  background: radial-gradient(circle, rgba(14,165,233,0.1) 0%, transparent 70%);
-  bottom: 5%; right: -160px;
-  animation-duration: 15s;
-  animation-delay: -5s;
+  width: 60vw; height: 60vw; max-width: 700px; max-height: 700px;
+  background: radial-gradient(circle, rgba(245,158,11,0.13) 0%, transparent 70%);
+  bottom: 0%; right: -15%;
+  animation-duration: 22s; animation-delay: -5s;
 }
 .blob-3 {
-  width: 380px; height: 380px;
+  width: 40vw; height: 40vw; max-width: 500px; max-height: 500px;
   background: radial-gradient(circle, rgba(245,158,11,0.08) 0%, transparent 70%);
-  bottom: -90px; left: 38%;
-  animation-duration: 11s;
-  animation-delay: -9s;
+  bottom: -5%; left: 30%;
+  animation-duration: 16s; animation-delay: -9s;
 }
-
 @keyframes blobFloat {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  25%       { transform: translate(22px, -18px) scale(1.04); }
-  50%       { transform: translate(-14px, 22px) scale(0.97); }
-  75%       { transform: translate(16px, 8px) scale(1.02); }
+  0%, 100% { transform: translate(0,0) scale(1); }
+  33%       { transform: translate(30px,-40px) scale(1.05); }
+  66%       { transform: translate(-20px,30px) scale(0.95); }
 }
 
-/* ── Message entrance ────────────────────────────────────────────────────────── */
-.message-enter {
-  animation: fadeInUp 0.28s cubic-bezier(0.22, 0.61, 0.36, 1) both;
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(10px); }
+/* ── Animations ──────────────────────────────────────────────────────────────── */
+.message-enter { animation: slideInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) both; }
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(16px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ── Typing indicator dots ───────────────────────────────────────────────────── */
-.typing-dot {
-  animation: typingBounce 1.3s ease-in-out infinite;
-}
-
+.typing-dot { animation: typingBounce 1.4s ease-in-out infinite; }
 @keyframes typingBounce {
-  0%, 75%, 100% { transform: translateY(0);   opacity: 0.4; }
-  38%           { transform: translateY(-6px); opacity: 1; }
+  0%,80%,100% { transform: translateY(0); opacity: 0.3; }
+  40%         { transform: translateY(-6px); opacity: 1; }
 }
 
-/* ── Status dot pulse ────────────────────────────────────────────────────────── */
 .status-dot {
-  width: 7px; height: 7px; border-radius: 50%; background: #10B981;
-  animation: statusGlow 2.8s ease-in-out infinite;
+  width: 8px; height: 8px; border-radius: 50%; background: #DA532C;
+  box-shadow: 0 0 10px rgba(218,83,44,0.6);
+  animation: pulseStatus 2s infinite;
+}
+@keyframes pulseStatus {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(218,83,44, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(218,83,44, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(218,83,44, 0); }
 }
 
-@keyframes statusGlow {
-  0%, 100% { box-shadow: 0 0 0 0   rgba(16,185,129,0.55); }
-  50%       { box-shadow: 0 0 0 6px rgba(16,185,129,0); }
-}
-
-/* ── Spinner ─────────────────────────────────────────────────────────────────── */
-.spinner { animation: spin 0.75s linear infinite; }
-
+.spinner { animation: spin 1s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
 
-/* ── Suggestion chips ────────────────────────────────────────────────────────── */
-.chip:hover {
-  background: rgba(255,255,255,0.1) !important;
-  border-color: rgba(255,255,255,0.2) !important;
-  color: rgba(255,255,255,0.92) !important;
+@keyframes skeletonPulse {
+  0%,100% { opacity: 0.3; background: rgba(255,255,255,0.05); }
+  50%      { opacity: 0.7; background: rgba(255,255,255,0.1); }
+}
+
+/* ── Interactive elements ────────────────────────────────────────────────────── */
+button { font-family: inherit; }
+
+.btn-glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.85);
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.25);
   transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
-.chip:active { transform: translateY(0) !important; }
+.btn-glass:active { transform: translateY(1px); }
 
-/* ── Send button ─────────────────────────────────────────────────────────────── */
+.chip {
+  padding: 8px 16px; border-radius: 24px;
+  background: rgba(218, 83, 44, 0.1);
+  border: 1px solid rgba(218, 83, 44, 0.2);
+  color: #f08060; font-weight: 500;
+  font-size: 13px; cursor: pointer;
+  transition: all 0.2s ease;
+}
+.chip:hover {
+  background: rgba(218, 83, 44, 0.2);
+  border-color: rgba(218, 83, 44, 0.4);
+  color: #f5a080;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(218, 83, 44, 0.15);
+}
+.chip:active { transform: translateY(0); }
+
+.send-btn {
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
 .send-btn:hover:not(:disabled) {
-  transform: scale(1.1);
-  box-shadow: 0 5px 22px rgba(16,185,129,0.5) !important;
+  transform: scale(1.08) rotate(-5deg);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
 }
-.send-btn:active:not(:disabled) { transform: scale(0.93); }
+.send-btn:active:not(:disabled) { transform: scale(0.95); }
 
-/* ── Scroll-to-bottom button ─────────────────────────────────────────────────── */
+.scroll-btn {
+  background: rgba(30, 41, 59, 0.8) !important;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
 .scroll-btn:hover {
-  background: rgba(255,255,255,0.18) !important;
-  transform: scale(1.06);
+  background: rgba(51, 65, 85, 0.9) !important;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.4);
 }
 
-/* ── Textarea placeholder ────────────────────────────────────────────────────── */
-textarea::placeholder { color: rgba(255,255,255,0.2); }
-textarea { caret-color: #10B981; }
+textarea::placeholder { color: rgba(255,255,255,0.3); font-weight: 400; }
+textarea { caret-color: #DA532C; }
+a { color: inherit; text-decoration: none; }
 
-/* ── Link reset for product links ────────────────────────────────────────────── */
-a { color: inherit; }
+/* ── Layout components ───────────────────────────────────────────────────────── */
+
+/* Message list */
+.msg-list {
+  flex: 1; overflow-y: auto; overflow-x: hidden;
+  padding: 24px 20px 100px; /* Extra padding for floating input */
+  position: relative; z-index: 1;
+  display: flex; flex-direction: column; gap: 24px;
+}
+
+/* Floating Input bar (Figure-Ground principle) */
+.input-wrapper {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(5,13,26,0.95) 40%, transparent);
+  pointer-events: none; /* Let clicks pass through the gradient */
+  z-index: 10;
+  display: flex; justify-content: center;
+  padding-bottom: max(20px, env(safe-area-inset-bottom));
+}
+
+.input-bar {
+  pointer-events: auto; /* Re-enable clicks for the input itself */
+  width: 100%; max-width: 768px;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 28px;
+  padding: 8px 10px 8px 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255,255,255,0.1);
+  display: flex; align-items: flex-end; gap: 12px;
+  transition: all 0.3s ease;
+}
+.input-bar:focus-within {
+  border-color: rgba(16, 185, 129, 0.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 2px rgba(16, 185, 129, 0.2);
+  background: rgba(15, 23, 42, 0.85);
+}
+
+/* Suggestion chips row */
+.chips-row {
+  display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;
+  margin-top: 8px; margin-bottom: 12px;
+}
+
+/* Language selection cards grid */
+.lang-cards-row {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 20px;
+  width: 100%; margin-top: 24px;
+}
+.lang-card {
+  padding: 28px 24px;
+  border-radius: 24px;
+  cursor: pointer;
+  display: flex; flex-direction: column;
+  align-items: center; gap: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.lang-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(16, 185, 129, 0.5);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(16, 185, 129, 0.15), inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.lang-card:active { transform: translateY(-2px); }
+
+/* Language badge text (hidden on very small screens) */
+.lang-badge-text { display: inline; font-weight: 500; }
+
+/* Product card scroll row */
+.product-scroll {
+  scrollbar-width: none; -ms-overflow-style: none;
+  padding: 12px 0 16px 4px;
+  display: flex; gap: 16px;
+  overflow-x: auto; overflow-y: visible;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+.product-scroll::-webkit-scrollbar { display: none; }
+
+/* Product card wrapper */
+.product-card-wrap {
+  position: relative;
+  flex-shrink: 0;
+  width: 220px;
+  scroll-snap-align: start;
+}
+
+/* Product hover preview */
+.product-preview {
+  position: absolute; bottom: calc(100% + 12px); left: 50%;
+  transform: translateX(-50%) scale(0.95);
+  opacity: 0; visibility: hidden;
+  z-index: 50; pointer-events: none;
+  border-radius: 16px; overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.product-card-wrap:hover .product-preview {
+  opacity: 1; visibility: visible;
+  transform: translateX(-50%) scale(1);
+}
+@media (hover: none) {
+  .product-preview { display: none !important; }
+}
+
+/* Markdown formatting in messages */
+.markdown-content {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.markdown-content strong { color: #fff; font-weight: 600; }
+.markdown-content em { color: rgba(255,255,255,0.85); }
+.markdown-content ul { list-style-type: disc; margin: 8px 0; padding-left: 20px; }
+.markdown-content li { margin-bottom: 4px; }
+.markdown-content p { margin-bottom: 8px; }
+.markdown-content p:last-child { margin-bottom: 0; }
+
+/* Header adjustments */
+header {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+/* Message Bubbles */
+.msg-bubble {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  overflow-wrap: break-word;
+  line-height: 1.5;
+  font-size: 15px;
+}
+.msg-bubble-bot {
+  background: rgba(30, 41, 59, 0.6) !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
+  backdrop-filter: blur(12px);
+  border-radius: 0px 18px 18px 18px !important;
+}
+.msg-bubble-user {
+  background: linear-gradient(135deg, #DA532C, #b83d1c) !important;
+  border-radius: 18px 0px 18px 18px !important;
+  box-shadow: 0 6px 20px rgba(218,83,44,0.25) !important;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.kopi-avatar {
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform-origin: center center;
+  cursor: pointer;
+}
+.kopi-avatar.static svg * {
+  animation: none !important;
+}
+.kopi-avatar:hover {
+  transform: scale(1.5);
+  z-index: 10;
+}
+.kopi-avatar.static:hover svg * {
+  animation: '' !important;
+}
+.kopi-avatar.static:hover .tail-sway { animation: swayTail 3s ease-in-out infinite !important; }
+.kopi-avatar.static:hover .bounce { animation: searchBounce 0.4s ease-in-out infinite alternate !important; }
+.kopi-avatar.static:hover .shrug { animation: shrugBounce 2.5s ease-in-out infinite !important; }
+.kopi-avatar.static:hover .float-q { animation: fadeQ 2.5s ease-in-out infinite !important; }
+.kopi-avatar.static:hover .sparkle-eye { animation: pulseStar 1s ease-in-out infinite !important; }
+.kopi-avatar.static:hover .pop-sparkle { animation: popSparkle 1.5s ease-in-out infinite !important; }
+.kopi-avatar.static:hover .wind-line { animation: windLine 0.8s linear infinite !important; }
+.kopi-avatar.static:hover .confetti { animation: confettiFall 2s linear infinite !important; }
+.kopi-avatar.static:hover .floating-heart { animation: floatHeart 2s ease-in infinite !important; }
+.kopi-avatar.static:hover .truck-bounce { animation: truckBounce 0.2s ease-in-out infinite alternate !important; }
+.kopi-avatar.static:hover .wheel-spin { animation: spinWheel 0.4s linear infinite !important; }
+
+/* Cart Drawer */
+.cart-drawer {
+  position: absolute; top: 0; right: 0; bottom: 0;
+  width: 320px; max-width: 100%;
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(24px);
+  border-left: 1px solid rgba(255,255,255,0.1);
+  box-shadow: -10px 0 40px rgba(0,0,0,0.5);
+  z-index: 100;
+  display: flex; flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.cart-drawer.open {
+  transform: translateX(0);
+}
+.cart-item {
+  display: flex; gap: 12px; padding: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.cart-item img {
+  width: 60px; height: 60px; border-radius: 8px; object-fit: cover;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.cart-item-info {
+  flex: 1; display: flex; flex-direction: column; gap: 4px;
+}
+.cart-item-name {
+  color: #fff; font-size: 13px; font-weight: 500;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.cart-item-price { color: #DA532C; font-weight: 600; font-size: 13px; }
+.cart-subtotal {
+  padding: 20px; border-top: 1px solid rgba(255,255,255,0.1);
+  display: flex; justify-content: space-between; align-items: center;
+  font-weight: 600; color: #fff; font-size: 16px;
+  background: rgba(255,255,255,0.02);
+}
+
+/* ── Mobile responsive ───────────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  textarea, input { font-size: 16px !important; } /* Prevent iOS tap zoom */
+
+  .msg-list { padding: 16px 12px 90px; gap: 20px; }
+  .msg-bubble {
+    max-width: 88% !important;
+    line-height: 1.5;
+    font-size: 15px !important;
+  }
+
+  .input-wrapper { padding: 12px; }
+  .input-bar { border-radius: 24px; padding: 6px 8px 6px 16px; }
+
+  .product-card-wrap { width: 160px; }
+  .product-scroll { gap: 10px; padding-left: 0; }
+
+  .lang-cards-row { grid-template-columns: 1fr; gap: 12px; }
+  .lang-card { padding: 20px 16px; flex-direction: row; justify-content: flex-start; }
+
+  /* Keep lang-badge-text visible at 640px (tablet-ish) — only hide on narrow phones */
+
+  /* Tighten header button padding on mobile */
+  .btn-glass { padding: 5px 8px !important; }
+
+  /* Category grid: 4-col on narrow screens still works, just smaller */
+  .cat-grid { gap: 6px !important; }
+}
+
+@media (max-width: 360px) {
+  .product-card-wrap { width: 140px; }
+}
+
+/* ── TASK CSS ANIMATIONS AND MICRO-INTERACTIONS ──────────────────────────────── */
+.delivery-picker { margin-left: 44px; margin-bottom: 12px; }
+@media (max-width: 480px) {
+  .message-avatar { display: none; }
+  .delivery-picker { margin-left: 0; }
+
+  /* Icon-only header buttons on narrow phones */
+  .lang-badge-text { display: none; }
+  .currency-label { display: none; }
+  .btn-glass { padding: 5px 8px !important; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); opacity: 0.5; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes springPulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
+.send-btn.pulse { animation: springPulse 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+@keyframes chipUp { 
+  from { opacity: 0; transform: translateY(10px); } 
+  to { opacity: 1; transform: translateY(0); } 
+}
+.chip-enter { animation: chipUp 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; opacity: 0; }
+
+@keyframes rubberBand {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.4); }
+  60% { transform: scale(0.9); }
+  80% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+.bounce-cart { animation: rubberBand 0.4s; }
+
+@keyframes waveBounce { 
+  0% { transform: translateY(0); } 
+  100% { transform: translateY(-6px); } 
+}
+
+.hint-enter { animation: chipUp 0.4s ease forwards; }
+
+/* ── Confetti ────────────────────────────────────────────────────────────────── */
+@keyframes confettiFall {
+  0%   { transform: translateY(-20px) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+.confetti-particle {
+  position: fixed; width: 8px; height: 8px; border-radius: 2px;
+  pointer-events: none; z-index: 9999;
+  animation: confettiFall 2.5s ease-in forwards;
+}
