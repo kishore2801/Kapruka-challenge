@@ -1,4 +1,4 @@
-# 🛍️ Kapruka Shopping Assistant with "Kopi" Mascot
+# 🛍️ Kapruka Shopping Assistant with "Korpi" Mascot
 
 Welcome to the **Kapruka AI Shopping Assistant**, a sophisticated e-commerce agent designed to provide seamless, conversational shopping experiences. Built as a portfolio demonstration, this application integrates a rich front-end interface, multilingual AI language models, and Model Context Protocol (MCP) tool-calling to browse and purchase products directly through chat.
 
