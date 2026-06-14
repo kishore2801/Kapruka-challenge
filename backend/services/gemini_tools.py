@@ -11,7 +11,7 @@ KAPRUKA_TOOLS = [types.Tool(
                     "query": types.Schema(type=types.Type.STRING, description="Search query (e.g., 'chocolate gifts'). Required."),
                     "max_price": types.Schema(type=types.Type.NUMBER, description="Maximum price (optional)."),
                     "min_price": types.Schema(type=types.Type.NUMBER, description="Minimum price (optional)."),
-                    "category": types.Schema(type=types.Type.STRING, description="ONLY use if the user explicitly names a category from kapruka_list_categories (e.g. 'Cakes', 'Flowers'). NEVER infer a category from the query — omit this field for general searches."),
+                    "category": types.Schema(type=types.Type.STRING, description="Exact Kapruka category name. Only use these verified values: 'Chocolates', 'Softtoy', 'Clothing', 'Electronic', 'Grocery', 'Household', 'Cosmetics', 'KidsToys', 'Perfumes', 'Jewellery', 'Books', 'Fruits'. Do NOT use 'Cakes', 'Flowers', 'Soft Toys', or any other name — they will return zero results. Omit for cakes, flowers, or any category not in this list."),
                     "sort": types.Schema(type=types.Type.STRING, description="Sort by 'price', 'rating', or 'newest' (optional)."),
                     "limit": types.Schema(type=types.Type.INTEGER, description="Number of results to return (default 10, max 30)."),
                     "currency": types.Schema(type=types.Type.STRING, description="Currency code for prices, e.g. LKR, USD, GBP, EUR, AUD, CAD, SGD, INR."),

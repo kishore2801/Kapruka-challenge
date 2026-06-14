@@ -92,6 +92,7 @@ class KaprukaMCP:
                 result = data.get("result", {})
                 if result.get("isError"):
                     logger.error(f"MCP {tool_name} tool error: {result}")
+                    cls._session_id = None # force re-init
                     return ""
 
                 content = result.get("content", [])
@@ -101,12 +102,14 @@ class KaprukaMCP:
 
             except httpx.RemoteProtocolError as e:
                 logger.warning(f"MCP {tool_name} connection dropped (attempt {attempt + 1}): {e}")
+                cls._session_id = None
                 if attempt < 2:
                     await asyncio.sleep(0.4 * (attempt + 1))
                     continue
                 return ""
             except httpx.TimeoutException:
                 logger.error(f"MCP timeout: {tool_name}")
+                cls._session_id = None
                 return ""
             except Exception as e:
                 logger.error(f"MCP error {tool_name}: {e}")
@@ -116,7 +119,7 @@ class KaprukaMCP:
     @classmethod
     async def search_products(cls, query: str, max_price=None, min_price=None,
                                category=None, limit: int = 10, sort=None,
-                               currency: str = "LKR") -> str:
+                               currency: str = "LKR", cursor: Optional[str] = None) -> str:
         params: Dict[str, Any] = {"q": query, "limit": min(limit, 30), "currency": currency}
         if max_price is not None:
             params["max_price"] = max_price
@@ -126,6 +129,8 @@ class KaprukaMCP:
             params["category"] = category
         if sort is not None:
             params["sort"] = sort
+        if cursor is not None:
+            params["cursor"] = cursor
         return await cls.call_tool("kapruka_search_products", params)
 
     @classmethod
